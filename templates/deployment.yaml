@@ -16,8 +16,7 @@ spec:
       - env:
         - name: MYSQL_ROOT_PASSWORD
           value: rootpasswd
-        image: mbnism/crizmas
-        imagePullPolicy: Never
+        image: mbnism/crizmas:latest
         name: {{ .Values.name }}
         ports:
         - containerPort: {{ .Values.deployment.port }}
